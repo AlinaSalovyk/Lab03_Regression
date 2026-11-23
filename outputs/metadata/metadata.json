@@ -1,0 +1,59 @@
+{
+  "project_title": "Лабораторна робота №2: Розвідувальний аналіз даних (EDA) для задач регресії",
+  "author": {
+    "student_name": "Садовик Аліна",
+    "group": "АтаВДвR-11",
+    "course": "Аналіз та візуалізація даних у R"
+  },
+  "dataset_metadata": {
+    "dataset_name": "Набір даних для виявлення раннього стресу та академічного дистресу у студентів",
+    "english_name": "Early Student Stress Detection and Academic Distress Dataset",
+    "description": "Понад 289 тис. записів про академічні оцінки, залученість до віртуального освітнього навчання (VLE/LMS), благополуччя та тріаж психічного здоров'я учнів",
+    "raw_filename": "final_student_dataset.csv",
+    "processed_filename": "clean_data.csv",
+    "total_observations": 289161,
+    "total_variables": 47,
+    "target_variable": "final_score_pct",
+    "target_type": "continuous_numeric",
+    "target_range": [0.0, 100.0],
+    "target_mean": 61.68,
+    "target_median": 64.3,
+    "target_sd": 21.37,
+    "target_iqr": 33.06,
+    "tracks": [
+      "Track 1: Academic Performance & Behavioral Engagement (VLE/LMS)",
+      "Track 2: Psychological Factors & Physiological/Social Well-being",
+      "Track 3: Socio-demographic Profile & ML Supervised Targets"
+    ],
+    "primary_subdatasets": [
+      {"name": "dropout_risk_2026", "count": 100000},
+      {"name": "mental_health", "count": 150000},
+      {"name": "oulad", "count": 32593},
+      {"name": "uci_dropout", "count": 4424},
+      {"name": "stress_survey", "count": 1100},
+      {"name": "uci_performance", "count": 1044}
+    ]
+  },
+  "key_findings": {
+    "strongest_positive_predictors": ["gpa_score_avg (r=0.722)", "pass_rate (r=0.683)", "first_assessment_score (r=0.671)"],
+    "strongest_negative_predictors": ["stress_level_3class (r=-0.391)", "burnout_score (r=-0.350)", "missed_submissions_count (r=-0.236)"],
+    "critical_thresholds": "Attendance below 40% or > 2 missed submissions marks dramatic risk escalation"
+  },
+  "generated_artifacts": {
+    "tables": ["descriptive_statistics.csv", "correlations.csv", "group_comparison.csv", "source_dataset_comparison.csv"],
+    "figures": [
+      "fig01_target_distribution.png",
+      "fig02_correlation_matrix.png",
+      "fig03_gpa_vs_final_score.png",
+      "fig04_stress_vs_performance.png",
+      "fig05_engagement_scatter.png",
+      "fig06_multivariate_interactions.png",
+      "fig07_socioeconomic_disparities.png",
+      "fig08_dataset_heterogeneity.png"
+    ]
+  },
+  "environment": {
+    "r_version": "4.5.3",
+    "os": "Windows 11 x64"
+  }
+}

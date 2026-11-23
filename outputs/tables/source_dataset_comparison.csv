@@ -1,0 +1,7 @@
+"source_dataset","N","Mean_Final_Score","SD_Final_Score","Median_Final_Score","Mean_GPA","Mean_Attendance","Mean_Stress","Corr_GPA_Final","Corr_Stress_Final"
+"dropout_risk_2026",100000,60.2,23.59,67.89,56.86,75.1,6.45,0.873,-0.101
+"mental_health",150000,62.32,19.2,62.3,69.97,75.01,5.02,0.63,-0.426
+"oulad",32593,63.97,21.93,60.37,71.15,21.67,5.61,0.798,-0.908
+"stress_survey",1100,58.75,30.11,58,55.45,82,4.98,0.921,-0.883
+"uci_dropout",4424,56.89,27.22,71.71,52.18,82,4.78,0.903,-0.856
+"uci_performance",1044,63.09,24.15,68.5,56.71,91.2,4.38,0.936,-0.924

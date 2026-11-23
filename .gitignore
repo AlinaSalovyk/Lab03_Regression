@@ -1,0 +1,21 @@
+# R environment files
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Temporary directories and caches
+.tmp/
+*_cache/
+*.log
+
+# Large uncompressed files exceeding GitHub 100MB limit
+data/processed/clean_data.csv
+
+# OS-specific
+Thumbs.db
+Desktop.ini
+.DS_Store
